@@ -13,7 +13,7 @@ services:
       - traefik
     labels:
       - traefik.port = 80
-      - traefik.http.routers.frontend-intern.rule=Host("fg.carosa.no")
+      - traefik.http.routers.frontend-intern.rule=Host("intern.fg.carosa.no")
       - traefik.http.routers.registry.service=frontend-intern
 networks:
   traefik:
